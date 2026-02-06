@@ -5,11 +5,9 @@ import com.example.devforum.domain.Topico;
 import com.example.devforum.domain.Usuario;
 import com.example.devforum.dto.resposta.DadosResposta;
 import com.example.devforum.dto.resposta.DadosRespostaCadastro;
-import com.example.devforum.repository.CursoRepository;
 import com.example.devforum.repository.RespostaRepository;
 import com.example.devforum.repository.TopicoRepository;
 import com.example.devforum.repository.UsuarioRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 

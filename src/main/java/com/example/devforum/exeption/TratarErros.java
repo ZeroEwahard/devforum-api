@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.client.HttpClientErrorException;
 
-import java.util.List;
-
 @RestControllerAdvice
 public class TratarErros {
 
@@ -26,6 +24,7 @@ public class TratarErros {
         return ResponseEntity.badRequest().body(erro.stream()
                 .map(DadosErroValidacao::new).toList());
     }
+
     @ExceptionHandler(HttpClientErrorException.Conflict.class)
     public ResponseEntity<String> tratarErro409(HttpClientErrorException.Conflict ex) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());

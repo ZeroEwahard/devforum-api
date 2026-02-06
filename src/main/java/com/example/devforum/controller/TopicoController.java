@@ -1,18 +1,14 @@
 package com.example.devforum.controller;
 
-import com.example.devforum.dto.resposta.DadosResposta;
 import com.example.devforum.dto.topico.DadosAtualizacao;
 import com.example.devforum.dto.topico.DadosListagemTopico;
 import com.example.devforum.dto.topico.DadosTopicoCadastrado;
 import com.example.devforum.dto.topico.DadosTopicoDetalhamento;
-import com.example.devforum.repository.TopicoRepository;
 import com.example.devforum.service.TopicoService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -47,8 +43,8 @@ public class TopicoController {
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity deletar(@PathVariable Long id) {
-       repositorioService.deletar(id);
-       return ResponseEntity.noContent().build();
+        repositorioService.deletar(id);
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping("/{id}")

@@ -10,11 +10,9 @@ import com.example.devforum.dto.topico.DadosTopicoDetalhamento;
 import com.example.devforum.repository.CursoRepository;
 import com.example.devforum.repository.TopicoRepository;
 import com.example.devforum.repository.UsuarioRepository;
-import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Range;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -23,7 +21,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.nio.file.AccessDeniedException;
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 @Service
 public class TopicoService {
@@ -65,11 +62,13 @@ public class TopicoService {
         return topicoRepository.findAllByStatusTrue(pageable)
                 .map(DadosListagemTopico::new);
     }
+
     @Transactional
     public DadosTopicoDetalhamento detalhar(Long id) {
         Topico topico = topicoRepository.findById(id).orElseThrow(EntityNotFoundException::new);
         return new DadosTopicoDetalhamento(topico);
     }
+
     @Transactional
     public DadosTopicoDetalhamento atualizar(DadosAtualizacao dados) {
         var usuario = usuarioLogado();
@@ -82,6 +81,7 @@ public class TopicoService {
         topico.atualizarInformacoes(dados);
         return new DadosTopicoDetalhamento(topico);
     }
+
     @Transactional
     public void deletar(Long id) {
         var usuario = usuarioLogado();

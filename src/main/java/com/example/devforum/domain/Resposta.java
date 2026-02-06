@@ -1,6 +1,5 @@
 package com.example.devforum.domain;
 
-import com.example.devforum.dto.resposta.DadosResposta;
 import jakarta.persistence.*;
 import lombok.*;
 

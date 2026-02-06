@@ -4,7 +4,6 @@ import com.example.devforum.domain.Perfil;
 import com.example.devforum.domain.Usuario;
 import com.example.devforum.dto.usuario.DadosCadastroUsuario;
 import com.example.devforum.repository.UsuarioRepository;
-import io.jsonwebtoken.Jwt;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +26,7 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity cadastrarUsuario(@RequestBody @Valid DadosCadastroUsuario dados){
+    public ResponseEntity cadastrarUsuario(@RequestBody @Valid DadosCadastroUsuario dados) {
         if (usuarioRepository.existsByEmail(dados.email()))
             return ResponseEntity.status(HttpStatus.CONFLICT).build();
 

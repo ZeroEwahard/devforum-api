@@ -1,10 +1,7 @@
 package com.example.devforum.domain;
 
-import com.example.devforum.controller.TopicoController;
 import com.example.devforum.dto.topico.DadosAtualizacao;
-import com.example.devforum.dto.topico.DadosTopicoCadastrado;
 import jakarta.persistence.*;
-import jakarta.validation.Valid;
 import lombok.*;
 
 import java.time.LocalDateTime;

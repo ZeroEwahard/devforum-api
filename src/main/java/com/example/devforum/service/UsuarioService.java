@@ -1,10 +1,7 @@
 package com.example.devforum.service;
 
-import com.example.devforum.domain.Usuario;
 import com.example.devforum.repository.UsuarioRepository;
 import org.jspecify.annotations.NonNull;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
