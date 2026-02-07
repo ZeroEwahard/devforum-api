@@ -37,29 +37,29 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 
 ## EndPoints
 
-| Método |      Rota      |          Descrição           |
-|        |                |                              |
-| POST   |   /usuarios    |          Cadastro            |
-| POST   |   /cursos      |         Criar curso          |
-| POST   |   /auth/login  |            Login             |
-| POST   |   /topicos     |         Criar tópico         |
-|        |                |                              |
-| GET    |  /topicos      |   Listar todos os tópicos    |
-| GET    |  /topicos/{id} |   Mais detalher do tópico    |
-|        |                |                              |
-| PUT    |   /topicos     | Atualizar o título do tópico |
-|        |                |                              |
-| DELETE | /topicos/{id}  |           Deletar            |
-|        |                |                              |
-| POST   |   /repostas    |        Criar resposta        |
+| Método |      Rota      |          Descrição           |<br>
+|        |                |                              |<br>
+| POST   |   /usuarios    |          Cadastro            |<br>
+| POST   |   /cursos      |         Criar curso          |<br>
+| POST   |   /auth/login  |            Login             |<br>
+| POST   |   /topicos     |         Criar tópico         |<br>
+|        |                |                              |<br>
+| GET    |  /topicos      |   Listar todos os tópicos    |<br>
+| GET    |  /topicos/{id} |   Mais detalher do tópico    |<br>
+|        |                |                              |<br>
+| PUT    |   /topicos     | Atualizar o título do tópico |<br>
+|        |                |                              |<br>
+| DELETE | /topicos/{id}  |           Deletar            |<br>
+|        |                |                              |<br>
+| POST   |   /repostas    |        Criar resposta        |<br>
 
 ## Autenticação
 Authorization: Bearer TOKEN
 
 ## Configuração
-spring.datasource.url
-spring.datasource.username
-spring.datasource.password
+spring.datasource.url <br>
+spring.datasource.username <br>
+spring.datasource.password <br>
 
-api.security.token.secret
+api.security.token.secret <br>
 api.security.token.expiration
