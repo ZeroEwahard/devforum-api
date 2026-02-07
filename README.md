@@ -1,7 +1,8 @@
 # 💬👥DevForum-API
 
 ## 📓Descrição 
-API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, controle de acesso por roles e relacionamento entre usuários, cursos, tópicos e respostas.
+API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, controle de acesso por roles e relacionamento entre usuários, cursos, tópicos e respostas. <br>
+#ALURA #ORACLE
 
 ## 🛠️Tecnologias
 * Java 21
