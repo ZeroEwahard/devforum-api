@@ -1,9 +1,9 @@
-# DevForum-API
+# 💬👥DevForum-API
 
-## Descrição 
+## 📓Descrição 
 API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, controle de acesso por roles e relacionamento entre usuários, cursos, tópicos e respostas.
 
-## Tecnologias
+## 🛠️Tecnologias
 * Java 21
 * Spring Boot
 * Spring Security
@@ -15,7 +15,7 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 * Lombok
 * Validation
 
-## Funcionalidades
+## 💡Funcionalidades
 * Cadastro de usuários
 * Login com JWT
 * CRUD de tópicos
@@ -25,7 +25,7 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 * Soft delete
 * Validações
 
-## Fluxo
+## ➡️Fluxo
 
 1. Cadastrar usuário
 2. Criar curso
@@ -35,28 +35,28 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 6. Atualizar o tópico
 7. Deletar apenas como autor
 
-## EndPoints
+## 🎯EndPoints
 
 | Método |      Rota      |          Descrição           |<br>
-|        |                |                              |<br>
+<br>
 | POST   |   /usuarios    |          Cadastro            |<br>
 | POST   |   /cursos      |         Criar curso          |<br>
 | POST   |   /auth/login  |            Login             |<br>
 | POST   |   /topicos     |         Criar tópico         |<br>
-|        |                |                              |<br>
+<br>
 | GET    |  /topicos      |   Listar todos os tópicos    |<br>
 | GET    |  /topicos/{id} |   Mais detalher do tópico    |<br>
-|        |                |                              |<br>
+<br>
 | PUT    |   /topicos     | Atualizar o título do tópico |<br>
-|        |                |                              |<br>
+<br>
 | DELETE | /topicos/{id}  |           Deletar            |<br>
-|        |                |                              |<br>
+<br>
 | POST   |   /repostas    |        Criar resposta        |<br>
 
-## Autenticação
+## 🔐Autenticação
 Authorization: Bearer TOKEN
 
-## Configuração
+## ⚙️Configuração
 spring.datasource.url <br>
 spring.datasource.username <br>
 spring.datasource.password <br>
