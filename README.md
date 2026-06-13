@@ -38,21 +38,21 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 
 ## 🎯EndPoints
 ```bash
-| Método |      Rota      |          Descrição           |<br>
-<br>
-| POST   |   /usuarios    |          Cadastro            |<br>
-| POST   |   /cursos      |         Criar curso          |<br>
-| POST   |   /auth/login  |            Login             |<br>
-| POST   |   /topicos     |         Criar tópico         |<br>
-<br>
-| GET    |  /topicos      |   Listar todos os tópicos    |<br>
-| GET    |  /topicos/{id} |   Mais detalher do tópico    |<br>
-<br>
-| PUT    |   /topicos     | Atualizar o título do tópico |<br>
-<br>
-| DELETE | /topicos/{id}  |           Deletar            |<br>
-<br>
-| POST   |   /repostas    |        Criar resposta        |<br>
+| Método |      Rota      |          Descrição           |
+|        |                |                              |
+| POST   |   /usuarios    |          Cadastro            |
+| POST   |   /cursos      |         Criar curso          |
+| POST   |   /auth/login  |            Login             |
+| POST   |   /topicos     |         Criar tópico         |
+|        |                |                              |
+| GET    |  /topicos      |   Listar todos os tópicos    |
+| GET    |  /topicos/{id} |   Mais detalher do tópico    |
+|        |                |                              |
+| PUT    |   /topicos     | Atualizar o título do tópico |
+|        |                |                              |
+| DELETE | /topicos/{id}  |           Deletar            |
+|        |                |                              |
+| POST   |   /repostas    |        Criar resposta        |
 ```
 
 ## 🔐Autenticação
