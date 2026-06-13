@@ -37,7 +37,7 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 7. Deletar apenas como autor
 
 ## 🎯EndPoints
-
+```bash
 | Método |      Rota      |          Descrição           |<br>
 <br>
 | POST   |   /usuarios    |          Cadastro            |<br>
@@ -53,6 +53,7 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 | DELETE | /topicos/{id}  |           Deletar            |<br>
 <br>
 | POST   |   /repostas    |        Criar resposta        |<br>
+```
 
 ## 🔐Autenticação
 Authorization: Bearer TOKEN
