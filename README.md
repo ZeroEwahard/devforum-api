@@ -37,7 +37,7 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 7. Deletar apenas como autor
 
 ## 🎯EndPoints
-```bash
+```
 | Método |      Rota      |          Descrição           |
 |        |                |                              |
 | POST   |   /usuarios    |          Cadastro            |
