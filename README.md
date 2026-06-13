@@ -40,7 +40,7 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 ```
 | Método |      Rota      |          Descrição           |
 |        |                |                              |
-| POST   |   /usuarios    |          Cadastro            |
+| POST   |   /usuarios    |           Cadastro           |
 | POST   |   /cursos      |         Criar curso          |
 | POST   |   /auth/login  |            Login             |
 | POST   |   /topicos     |         Criar tópico         |
@@ -56,12 +56,14 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 ```
 
 ## 🔐Autenticação
-Authorization: Bearer TOKEN
+`Authorization: Bearer TOKEN`
 
 ## ⚙️Configuração
-spring.datasource.url <br>
-spring.datasource.username <br>
-spring.datasource.password <br>
+```properties
+spring.datasource.url 
+spring.datasource.username 
+spring.datasource.password 
 
-api.security.token.secret <br>
+api.security.token.secret 
 api.security.token.expiration
+```
