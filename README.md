@@ -60,10 +60,10 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 
 ## ⚙️Configuração
 ```properties
-spring.datasource.url 
-spring.datasource.username 
-spring.datasource.password 
+spring.datasource.url=jdbc:postgresql://${DB_HOST:localhost:5432}/dev-forum
+spring.datasource.username=${USUARIO} 
+spring.datasource.password=${SENHA}
 
-api.security.token.secret 
-api.security.token.expiration
+api.security.token.secret=${SENHA_SECRETA}
+api.security.token.expiration=900000
 ```
