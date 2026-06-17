@@ -39,8 +39,8 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 ## 🎯EndPoints
 ```
 | Método |      Rota      |          Descrição           |
-|        |                |                              |
-| POST   |   /usuarios    |           Cadastro           |
+|        |                |                              |             
+| POST   |   /usuarios    |           Cadastro           |            
 | POST   |   /cursos      |         Criar curso          |
 | POST   |   /auth/login  |            Login             |
 | POST   |   /topicos     |         Criar tópico         |
@@ -53,6 +53,21 @@ API REST de fórum desenvolvida com Spring Boot, utilizando autenticação JWT, 
 | DELETE | /topicos/{id}  |           Deletar            |
 |        |                |                              |
 | POST   |   /repostas    |        Criar resposta        |
+```
+
+```json
+{
+  "nome": "nome_usuario",
+  "email": "nome@email.com",
+  "senha": "******"
+}
+```
+```json
+{
+  "id": 1,
+  "nome": "JavaScript",
+  "categoria": "FRONT_END"
+}
 ```
 
 ## 🔐Autenticação
